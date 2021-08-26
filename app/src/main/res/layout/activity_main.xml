@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@id/time"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="00:00:00"
@@ -17,14 +18,14 @@
         android:layout_marginTop="210dp"
         />
 
+
     <ProgressBar
+        android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="400dp"
         android:layout_marginTop="40dp"
         android:indeterminateOnly="false"
-        android:progressDrawable="@drawable/timer"
-        />
-
+        android:progressDrawable="@drawable/timer" />
 
     <Button
         android:id="@+id/setTime"
@@ -35,6 +36,7 @@
         android:background="@drawable/button_rounded_edges"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Set Time"
+        android:textColor="@color/white"
         android:textAllCaps="false"
         android:textSize="17sp"
         app:backgroundTint="@null" />
